@@ -1,0 +1,130 @@
+{
+  "name": "07c3c116-c717-46dd-a5b6-45624c0e624d",
+  "displayName": "Order non-coffee",
+  "form": {
+    "parameters": [ {
+      "displayName": "non_coffee_choices",
+      "required": true,
+      "entityType": "@non_coffee_choices",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    }, {
+      "displayName": "cup_size",
+      "required": true,
+      "entityType": "@cup_size",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "What size of cup you prefer to have?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "payload": {
+              "richContent": [ [ {
+                "options": [ {
+                  "text": "s"
+                }, {
+                  "text": "M"
+                }, {
+                  "text": "L"
+                }, {
+                  "text": "XL"
+                } ],
+                "type": "chips"
+              } ] ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "hot_cold",
+      "required": true,
+      "entityType": "@hot_cold",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Hot or cold?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "payload": {
+              "richContent": [ [ {
+                "options": [ {
+                  "text": "Hot"
+                }, {
+                  "text": "Cold"
+                }, {
+                  "text": "Less ice"
+                } ],
+                "type": "chips"
+              } ] ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "sugar_level",
+      "required": true,
+      "entityType": "@sugar_level",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "How sweet would you like to have?" ]
+            },
+            "languageCode": "en"
+          }, {
+            "payload": {
+              "richContent": [ [ {
+                "options": [ {
+                  "text": "0%"
+                }, {
+                  "text": "25%"
+                }, {
+                  "text": "50%"
+                }, {
+                  "text": "75%"
+                }, {
+                  "text": "100%"
+                }, {
+                  "text": "\u003e100%"
+                } ],
+                "type": "chips"
+              } ] ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "number_cup",
+      "required": true,
+      "entityType": "@sys.number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "How many cup(s) of drink you would like to have?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Non-coffee Confirmation",
+    "name": "14fb26e0-873d-4825-a6c0-59e3bf50f621"
+  } ]
+}

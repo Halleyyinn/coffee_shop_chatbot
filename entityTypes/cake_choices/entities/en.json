@@ -1,0 +1,23 @@
+{
+  "entities": [ {
+    "value": "Strawberry cake",
+    "synonyms": [ "Strawberry", "Strawberry cake" ],
+    "languageCode": "en"
+  }, {
+    "value": "Chocolate cake",
+    "synonyms": [ "Choco cake", "Chocolate cake", "Coco cake" ],
+    "languageCode": "en"
+  }, {
+    "value": "Matcha cake",
+    "synonyms": [ "Matcha cake" ],
+    "languageCode": "en"
+  }, {
+    "value": "Burnt Cheese cake",
+    "synonyms": [ "Burnt Cheese cake", "Burnt Cheesecake" ],
+    "languageCode": "en"
+  }, {
+    "value": "Blueberry cake",
+    "synonyms": [ "Blueberry cake" ],
+    "languageCode": "en"
+  } ]
+}

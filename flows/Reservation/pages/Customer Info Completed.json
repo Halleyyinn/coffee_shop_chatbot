@@ -1,0 +1,23 @@
+{
+  "name": "a363a8ae-a59b-42df-aac2-51cf4ac82f47",
+  "displayName": "Customer Info Completed",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Thank you $session.params.customer_name. Hope to see you soon!" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Thank you ",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Thank you ",
+    "name": "b52740dc-b5ef-4be5-9792-43a9f114a046"
+  } ]
+}

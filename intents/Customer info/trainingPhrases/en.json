@@ -1,0 +1,24 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "85-N, Jalan Kampung Pisang, 11500 Air Itam, Penang",
+      "parameterId": "delivery_addres"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "North Block 4, Hunan International Exhibition Center , Changshan, Hunan 410003, China.",
+      "parameterId": "delivery_addres"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Voco Orchard Singapore L2Club 21 Voco Orchard Singapore #02-11 voco Shopping Gallery, Singapore 238883",
+      "parameterId": "delivery_addres"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

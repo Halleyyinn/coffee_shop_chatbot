@@ -1,0 +1,9 @@
+{
+  "name": "eef5292a-72c1-4e1e-be5f-57862a696b7e",
+  "displayName": "New Date",
+  "parameters": [ {
+    "id": "reservation_date",
+    "entityType": "@sys.date"
+  } ],
+  "priority": 500000
+}

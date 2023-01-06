@@ -1,0 +1,9 @@
+{
+  "name": "8a7ab77b-19be-4b9f-83b9-2addb8fa09ef",
+  "displayName": "New number pax ",
+  "parameters": [ {
+    "id": "number_pax",
+    "entityType": "@sys.number"
+  } ],
+  "priority": 500000
+}

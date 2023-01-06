@@ -1,0 +1,23 @@
+{
+  "name": "0c95fca4-0f0c-44ce-8bed-699d559fbc6e",
+  "displayName": "Change Time",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Please let us know the new time you prefer to visit us. " ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "New Time",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "New Time",
+    "name": "bfacc146-573e-408c-a935-6e119beeb37d"
+  } ]
+}

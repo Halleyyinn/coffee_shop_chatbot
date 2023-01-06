@@ -1,0 +1,43 @@
+{
+  "entities": [ {
+    "value": "Chocolate",
+    "synonyms": [ "Choco", "Chocolate", "coco" ],
+    "languageCode": "en"
+  }, {
+    "value": "Matcha",
+    "synonyms": [ "Green tea", "Matcha" ],
+    "languageCode": "en"
+  }, {
+    "value": "Lemon Tea",
+    "synonyms": [ "Lemon Tea" ],
+    "languageCode": "en"
+  }, {
+    "value": "Thai Milk Tea",
+    "synonyms": [ "Milk Tea", "Thai Milk Tea" ],
+    "languageCode": "en"
+  }, {
+    "value": "Honey Milk",
+    "synonyms": [ "Honey Milk", "Milk" ],
+    "languageCode": "en"
+  }, {
+    "value": "Orange Juice",
+    "synonyms": [ "Orange Juice" ],
+    "languageCode": "en"
+  }, {
+    "value": "Apple Juice",
+    "synonyms": [ "Apple Juice" ],
+    "languageCode": "en"
+  }, {
+    "value": "Watermelon Juice",
+    "synonyms": [ "Watermelon Juice" ],
+    "languageCode": "en"
+  }, {
+    "value": "Honey Lemon",
+    "synonyms": [ "Honey Lemon" ],
+    "languageCode": "en"
+  }, {
+    "value": "Water",
+    "synonyms": [ "Water" ],
+    "languageCode": "en"
+  } ]
+}

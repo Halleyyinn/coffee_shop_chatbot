@@ -1,0 +1,41 @@
+{
+  "name": "559b190d-cdb8-4656-b445-3e8e5215f674",
+  "displayName": "Cake",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "We have Strawberry shortcake, Chocolate cake, Burnt Cheesecake, Matcha cake, and Blueberry cake. What would you like to have?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "text": "Strawberry cake"
+          }, {
+            "text": "Chocolate cake"
+          }, {
+            "text": "Matcha cake"
+          }, {
+            "text": "Burnt Cheesecake"
+          }, {
+            "text": "Blueberry cake"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Order Cake",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Order cake",
+    "name": "6648a33d-e40a-4871-9364-f14187ce6d3b"
+  } ]
+}

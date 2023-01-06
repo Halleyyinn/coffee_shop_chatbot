@@ -1,0 +1,23 @@
+{
+  "name": "2396321c-52b4-45d5-961a-9100f241a253",
+  "displayName": "Thank you ",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Thank you too! Have a nice day!" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "7cad939e-19e6-40b2-8372-5664cfe22269"
+  } ]
+}

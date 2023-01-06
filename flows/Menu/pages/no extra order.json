@@ -1,0 +1,51 @@
+{
+  "name": "cb4fe01e-0416-4d99-bf58-1d06745718ec",
+  "displayName": "no extra order",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Noted with thanks. How would you like to get your order?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "text": "Dine in"
+          }, {
+            "text": "Delivery"
+          }, {
+            "text": "Take away"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Delivery",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Delivery",
+    "name": "0202f6db-d6b6-490e-be2c-775098603db0"
+  }, {
+    "intent": "Reservation",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Reservation",
+    "name": "174c5e71-8ca4-4632-9e96-bda79a10ed39"
+  }, {
+    "intent": "Take away",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Take away",
+    "name": "793d3750-fbdc-4730-8da7-8f3ee376afe7"
+  } ]
+}

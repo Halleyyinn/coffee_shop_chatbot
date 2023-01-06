@@ -1,0 +1,69 @@
+{
+  "name": "2f8bcfc9-cd22-43d1-afe3-3bb4d41bab1c",
+  "displayName": "Reservation Number Pax",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Noted with thanks. Please confirm your reservation: $session.params.reservation_date at $session.params.reservation_time for $session.params.number_pax person(s). Is it correct?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "text": "Yes, confirmed reservation"
+          }, {
+            "text": "Change Date"
+          }, {
+            "text": "Change Time"
+          }, {
+            "text": "Change Number Pax"
+          }, {
+            "text": "Cancellation"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Confirmation_yes",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Confirmation Yes",
+    "name": "549d963f-ab80-4478-be8b-92138c33651f"
+  }, {
+    "intent": "Change Date",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Date",
+    "name": "9de4ed7e-7994-48c1-9398-1792392f829e"
+  }, {
+    "intent": "Change Time",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Time",
+    "name": "9bf113ce-1ed5-431f-b379-03526b8fc839"
+  }, {
+    "intent": "Change Number Pax",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Change Number Pax",
+    "name": "b8342ae8-3c63-4fb6-960c-4b68fb164ed2"
+  }, {
+    "intent": "Cancel Booking",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Cancellation",
+    "name": "2cb46e40-e443-48f3-becc-80d7907cdbcd"
+  } ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "a0314ec9-edc6-4816-95f2-91425d6c848e",
+  "displayName": "New Time",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Noted with your new time. We've already updated your reservation time to $session.params.reservation_time. " ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "See you there!" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Thank you ",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Thank you ",
+    "name": "7e87a8af-3ef3-4233-9949-d0c39b323719"
+  } ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "5db4d0e6-4e34-47c1-855c-b369e29e79c7",
+  "displayName": "Take away confirm",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Thank you $session.params.customer_name for your info. You shall come to pick up your order at $session.params.take_away_time. Thank you once again." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Thank you ",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Thank you :)",
+    "name": "1f028527-d659-4a5d-88be-0e3c905450b6"
+  } ]
+}

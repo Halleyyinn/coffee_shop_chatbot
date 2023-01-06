@@ -1,0 +1,43 @@
+{
+  "name": "767d5682-ec3a-4a3b-b6c5-f956b4c7cea1",
+  "displayName": "Coffee",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "For coffee, we have Americano, Cappuccino, Espresso, Latte, Macchiato and Mocha. What would you like to have?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "text": "Americano"
+          }, {
+            "text": "Cappuccino"
+          }, {
+            "text": "Espresso"
+          }, {
+            "text": "Latte"
+          }, {
+            "text": "Macchiato"
+          }, {
+            "text": "Mocha"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Order Coffee",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Order coffee",
+    "name": "5a94bb94-7dd7-4caa-ab20-f9936c7f6b5b"
+  } ]
+}

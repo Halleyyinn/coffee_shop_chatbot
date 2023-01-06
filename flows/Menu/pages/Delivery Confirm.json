@@ -1,0 +1,23 @@
+{
+  "name": "2d412e4f-8337-49c7-b0d7-e6ee4e0965e4",
+  "displayName": "Delivery Confirm",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Thank you $session.params.customer_name for your info. You shall receive your order within 45 minutes. Thank you once again! " ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Thank you ",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Thank you :)",
+    "name": "ae6ecde1-c03f-4706-8bf3-741b43fa7530"
+  } ]
+}

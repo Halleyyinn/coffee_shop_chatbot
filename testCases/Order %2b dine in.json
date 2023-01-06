@@ -1,0 +1,698 @@
+{
+  "name": "65523276-3d14-47d8-a4a6-3966348c3db1",
+  "tags": [ "#order", "#dinein" ],
+  "displayName": "Order + dine in",
+  "testCaseConversationTurns": [ {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "hi"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Default Welcome Intent"
+      },
+      "currentPage": {
+        "name": "Start Page",
+        "flow": "Default Start Flow"
+      },
+      "textResponses": [ {
+        "text": [ "Good day! I am Kopi, the virtual assistant of Alice in Brewland. How can I help you?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "menu"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Menu"
+      },
+      "currentPage": {
+        "name": "Menu",
+        "flow": "Menu"
+      },
+      "textResponses": [ {
+        "text": [ "We have coffee, non-coffee drinks, and cake. Please let us know which category you would like to know more." ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "coffee"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "triggeredIntent": {
+        "name": "Coffee"
+      },
+      "currentPage": {
+        "name": "Coffee",
+        "flow": "Menu"
+      },
+      "textResponses": [ {
+        "text": [ "For coffee, we have Americano, Cappuccino, Espresso, Latte, Macchiato and Mocha. What would you like to have?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "latte"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "coffee_choices": "Latte"
+      },
+      "triggeredIntent": {
+        "name": "Order Coffee"
+      },
+      "currentPage": {
+        "name": "Order coffee",
+        "flow": "Menu"
+      },
+      "textResponses": [ {
+        "text": [ "What size of cup you would like to have?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Medium"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "coffee_choices": "Latte",
+        "cup_size": "medium"
+      },
+      "currentPage": {
+        "name": "Order coffee",
+        "flow": "Menu"
+      },
+      "textResponses": [ {
+        "text": [ "Hot or cold or less ice?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Cold"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "coffee_choices": "Latte",
+        "cup_size": "medium",
+        "hot_cold": "cold"
+      },
+      "currentPage": {
+        "name": "Order coffee",
+        "flow": "Menu"
+      },
+      "textResponses": [ {
+        "text": [ "How sweet would you like to have?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "50%"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "coffee_choices": "Latte",
+        "cup_size": "medium",
+        "hot_cold": "cold",
+        "sugar_level": "50%"
+      },
+      "currentPage": {
+        "name": "Order coffee",
+        "flow": "Menu"
+      },
+      "textResponses": [ {
+        "text": [ "How many cup(s) of coffee would you like to have?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "1"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "coffee_choices": "Latte",
+        "cup_size": "medium",
+        "hot_cold": "cold",
+        "number_cup": 1,
+        "sugar_level": "50%"
+      },
+      "currentPage": {
+        "name": "Coffee Confirmation",
+        "flow": "Menu"
+      },
+      "textResponses": [ {
+        "text": [ "Thanks for your order. You've ordered 1 medium cold Latte with 50% of sugar level. Do you like to add some other orders?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Yes"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "coffee_choices": "Latte",
+        "cup_size": "medium",
+        "hot_cold": "cold",
+        "number_cup": 1,
+        "sugar_level": "50%"
+      },
+      "triggeredIntent": {
+        "name": "Extra order"
+      },
+      "currentPage": {
+        "name": "Menu",
+        "flow": "Menu"
+      },
+      "textResponses": [ {
+        "text": [ "We have coffee, non-coffee drinks, and cake. Please let us know which category you would like to know more." ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Cake"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "coffee_choices": "Latte",
+        "cup_size": "medium",
+        "hot_cold": "cold",
+        "number_cup": 1,
+        "sugar_level": "50%"
+      },
+      "triggeredIntent": {
+        "name": "Cake"
+      },
+      "currentPage": {
+        "name": "Cake",
+        "flow": "Menu"
+      },
+      "textResponses": [ {
+        "text": [ "We have Strawberry shortcake, Chocolate cake, Burnt Cheesecake, Matcha cake, and Blueberry cake. What would you like to have?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Matcha"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "coffee_choices": "Latte",
+        "cup_size": "medium",
+        "hot_cold": "cold",
+        "number_cup": 1,
+        "sugar_level": "50%"
+      },
+      "currentPage": {
+        "name": "Cake",
+        "flow": "Menu"
+      },
+      "textResponses": [ {
+        "text": [ "Sorry, what was that?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Matcha cake"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "cake_choices": "Matcha cake",
+        "coffee_choices": "Latte",
+        "cup_size": "medium",
+        "hot_cold": "cold",
+        "number_cup": 1,
+        "sugar_level": "50%"
+      },
+      "triggeredIntent": {
+        "name": "Order Cake"
+      },
+      "currentPage": {
+        "name": "Order cake",
+        "flow": "Menu"
+      },
+      "textResponses": [ {
+        "text": [ "How many slice(s) of cake you would like to have?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "1"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "cake_choices": "Matcha cake",
+        "coffee_choices": "Latte",
+        "cup_size": "medium",
+        "hot_cold": "cold",
+        "number_cake": 1,
+        "number_cup": 1,
+        "sugar_level": "50%"
+      },
+      "currentPage": {
+        "name": "Cake Confirmation",
+        "flow": "Menu"
+      },
+      "textResponses": [ {
+        "text": [ "Thanks for your order. You've ordered 1 Matcha cake. Do you want to add any other orders?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "No"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "cake_choices": "Matcha cake",
+        "coffee_choices": "Latte",
+        "cup_size": "medium",
+        "hot_cold": "cold",
+        "number_cake": 1,
+        "number_cup": 1,
+        "sugar_level": "50%"
+      },
+      "triggeredIntent": {
+        "name": "No extra order"
+      },
+      "currentPage": {
+        "name": "no extra order",
+        "flow": "Menu"
+      },
+      "textResponses": [ {
+        "text": [ "Noted with thanks. How would you like to get your order?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Dine in "
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "cake_choices": "Matcha cake",
+        "coffee_choices": "Latte",
+        "cup_size": "medium",
+        "hot_cold": "cold",
+        "number_cake": 1,
+        "number_cup": 1,
+        "sugar_level": "50%"
+      },
+      "triggeredIntent": {
+        "name": "Reservation"
+      },
+      "currentPage": {
+        "name": "Reservation",
+        "flow": "Reservation"
+      },
+      "textResponses": [ {
+        "text": [ "Please let us know the date you would like to visit us. " ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "14/1/2023"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "cake_choices": "Matcha cake",
+        "coffee_choices": "Latte",
+        "cup_size": "medium",
+        "hot_cold": "cold",
+        "number_cake": 1,
+        "number_cup": 1,
+        "reservation_date": {
+          "day": 14,
+          "month": 1,
+          "year": 2023
+        },
+        "sugar_level": "50%"
+      },
+      "triggeredIntent": {
+        "name": "Reservation Date"
+      },
+      "currentPage": {
+        "name": "Reservation Date",
+        "flow": "Reservation"
+      },
+      "textResponses": [ {
+        "text": [ "Please let us know the time you would like to visit us. " ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "1pm"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "cake_choices": "Matcha cake",
+        "coffee_choices": "Latte",
+        "cup_size": "medium",
+        "hot_cold": "cold",
+        "number_cake": 1,
+        "number_cup": 1,
+        "reservation_date": {
+          "day": 14,
+          "month": 1,
+          "year": 2023
+        },
+        "reservation_time": {
+          "hours": 13,
+          "minutes": 0,
+          "nanos": 0,
+          "seconds": 0
+        },
+        "sugar_level": "50%"
+      },
+      "triggeredIntent": {
+        "name": "Reservation Time"
+      },
+      "currentPage": {
+        "name": "Reservation Time",
+        "flow": "Reservation"
+      },
+      "textResponses": [ {
+        "text": [ "Noted. Please let us know how many people is coming." ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "1"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "cake_choices": "Matcha cake",
+        "coffee_choices": "Latte",
+        "cup_size": "medium",
+        "hot_cold": "cold",
+        "number_cake": 1,
+        "number_cup": 1,
+        "number_pax": 1,
+        "reservation_date": {
+          "day": 14,
+          "month": 1,
+          "year": 2023
+        },
+        "reservation_time": {
+          "hours": 13,
+          "minutes": 0,
+          "nanos": 0,
+          "seconds": 0
+        },
+        "sugar_level": "50%"
+      },
+      "triggeredIntent": {
+        "name": "Reservation Number Pax"
+      },
+      "currentPage": {
+        "name": "Reservation Number Pax",
+        "flow": "Reservation"
+      },
+      "textResponses": [ {
+        "text": [ "Noted with thanks. Please confirm your reservation: 2023-01-14 at 13:00:00 for 1 person(s). Is it correct?" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "yes"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "cake_choices": "Matcha cake",
+        "coffee_choices": "Latte",
+        "cup_size": "medium",
+        "hot_cold": "cold",
+        "number_cake": 1,
+        "number_cup": 1,
+        "number_pax": 1,
+        "reservation_date": {
+          "day": 14,
+          "month": 1,
+          "year": 2023
+        },
+        "reservation_time": {
+          "hours": 13,
+          "minutes": 0,
+          "nanos": 0,
+          "seconds": 0
+        },
+        "sugar_level": "50%"
+      },
+      "triggeredIntent": {
+        "name": "Confirmation_yes"
+      },
+      "currentPage": {
+        "name": "Confirmation Yes",
+        "flow": "Reservation"
+      },
+      "textResponses": [ {
+        "text": [ "Thanks for your confirmation. Please provide us your name for this reservation. " ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "Halley"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "cake_choices": "Matcha cake",
+        "coffee_choices": "Latte",
+        "cup_size": "medium",
+        "customer_name": "Halley",
+        "hot_cold": "cold",
+        "number_cake": 1,
+        "number_cup": 1,
+        "number_pax": 1,
+        "reservation_date": {
+          "day": 14,
+          "month": 1,
+          "year": 2023
+        },
+        "reservation_time": {
+          "hours": 13,
+          "minutes": 0,
+          "nanos": 0,
+          "seconds": 0
+        },
+        "sugar_level": "50%"
+      },
+      "currentPage": {
+        "name": "Confirmation Yes",
+        "flow": "Reservation"
+      },
+      "textResponses": [ {
+        "text": [ "Please give us a contact number for this reservation." ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "4286594"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "cake_choices": "Matcha cake",
+        "coffee_choices": "Latte",
+        "cup_size": "medium",
+        "customer_contact": "4286594",
+        "customer_name": "Halley",
+        "hot_cold": "cold",
+        "number_cake": 1,
+        "number_cup": 1,
+        "number_pax": 1,
+        "reservation_date": {
+          "day": 14,
+          "month": 1,
+          "year": 2023
+        },
+        "reservation_time": {
+          "hours": 13,
+          "minutes": 0,
+          "nanos": 0,
+          "seconds": 0
+        },
+        "sugar_level": "50%"
+      },
+      "currentPage": {
+        "name": "Customer Info Completed",
+        "flow": "Reservation"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you Halley. Hope to see you soon!" ]
+      } ]
+    }
+  }, {
+    "userInput": {
+      "isWebhookEnabled": true,
+      "input": {
+        "text": {
+          "text": "see you!"
+        },
+        "languageCode": "en"
+      }
+    },
+    "virtualAgentOutput": {
+      "sessionParameters": {
+        "cake_choices": "Matcha cake",
+        "coffee_choices": "Latte",
+        "cup_size": "medium",
+        "customer_contact": "4286594",
+        "customer_name": "Halley",
+        "hot_cold": "cold",
+        "number_cake": 1,
+        "number_cup": 1,
+        "number_pax": 1,
+        "reservation_date": {
+          "day": 14,
+          "month": 1,
+          "year": 2023
+        },
+        "reservation_time": {
+          "hours": 13,
+          "minutes": 0,
+          "nanos": 0,
+          "seconds": 0
+        },
+        "sugar_level": "50%"
+      },
+      "triggeredIntent": {
+        "name": "Thank you "
+      },
+      "currentPage": {
+        "name": "Thank you ",
+        "flow": "Reservation"
+      },
+      "textResponses": [ {
+        "text": [ "Thank you too! Have a nice day!" ]
+      } ]
+    }
+  } ],
+  "creationTime": {
+    "seconds": 1672978755,
+    "nanos": 336132000
+  },
+  "testConfig": {
+    "flow": "Default Start Flow"
+  }
+}

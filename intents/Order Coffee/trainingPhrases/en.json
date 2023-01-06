@@ -1,0 +1,50 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Mocha",
+      "parameterId": "coffee_choices"
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Macchiato",
+      "parameterId": "coffee_choices",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Latte",
+      "parameterId": "coffee_choices",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Espresso",
+      "parameterId": "coffee_choices",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Cappuccino",
+      "parameterId": "coffee_choices",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Americano",
+      "parameterId": "coffee_choices",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

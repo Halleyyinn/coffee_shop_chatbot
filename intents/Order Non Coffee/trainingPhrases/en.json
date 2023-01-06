@@ -1,0 +1,83 @@
+{
+  "trainingPhrases": [ {
+    "parts": [ {
+      "text": "Water",
+      "parameterId": "non_coffee_choices",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Honey Lemon",
+      "parameterId": "non_coffee_choices",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Watermelon Juice",
+      "parameterId": "non_coffee_choices",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Apple Juice",
+      "parameterId": "non_coffee_choices",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Orange Juice",
+      "parameterId": "non_coffee_choices",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Honey Milk",
+      "parameterId": "non_coffee_choices",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Thai Milk Tea",
+      "parameterId": "non_coffee_choices",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Lemon Tea",
+      "parameterId": "non_coffee_choices",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Matcha",
+      "parameterId": "non_coffee_choices",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  }, {
+    "parts": [ {
+      "text": "Chocolate",
+      "parameterId": "non_coffee_choices",
+      "auto": true
+    } ],
+    "repeatCount": 1,
+    "languageCode": "en"
+  } ]
+}

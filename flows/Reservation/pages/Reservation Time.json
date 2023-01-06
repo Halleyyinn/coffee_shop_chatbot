@@ -1,0 +1,23 @@
+{
+  "name": "834745ca-2fe5-412c-8447-30c6360d6808",
+  "displayName": "Reservation Time",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Noted. Please let us know how many people is coming." ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Reservation Number Pax",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Reservation Number Pax",
+    "name": "f4b34d99-55df-4765-a411-89cc1050d65b"
+  } ]
+}

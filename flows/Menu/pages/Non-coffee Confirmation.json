@@ -1,0 +1,42 @@
+{
+  "name": "daf00d5e-3289-4d32-9698-e11f953dd63e",
+  "displayName": "Non-coffee Confirmation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Thanks for your order. You've ordered $session.params.number_cup $session.params.cup_size $session.params.hot_cold $session.params.non_coffee_choices with $session.params.sugar_level of sugar level. Do you want to add any other orders?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "text": "Yes, extra order"
+          }, {
+            "text": "No, that's it"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Extra order",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Menu",
+    "name": "fbce9bbd-fab8-4ea0-8a6c-174f54491416"
+  }, {
+    "intent": "No extra order",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "no extra order",
+    "name": "d9bee9d6-0fbf-43b4-87a9-73ff4e3bb102"
+  } ]
+}

@@ -1,0 +1,27 @@
+{
+  "entities": [ {
+    "value": "Americano",
+    "synonyms": [ "Americano" ],
+    "languageCode": "en"
+  }, {
+    "value": "Cappuccino",
+    "synonyms": [ "Cappuccino" ],
+    "languageCode": "en"
+  }, {
+    "value": "Espresso",
+    "synonyms": [ "Espresso" ],
+    "languageCode": "en"
+  }, {
+    "value": "Latte",
+    "synonyms": [ "Latte" ],
+    "languageCode": "en"
+  }, {
+    "value": "Macchiato",
+    "synonyms": [ "Macchiato" ],
+    "languageCode": "en"
+  }, {
+    "value": "Mocha",
+    "synonyms": [ "Mocha" ],
+    "languageCode": "en"
+  } ]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "89717df0-9300-4c99-873e-200630415c72",
+  "displayName": "Confirmation Yes",
+  "form": {
+    "parameters": [ {
+      "displayName": "customer_name",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    }, {
+      "displayName": "customer_contact",
+      "required": true,
+      "entityType": "@sys.phone-number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Please give us a contact number for this reservation." ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Thanks for your confirmation. Please provide us your name for this reservation. " ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Customer Info Completed",
+    "name": "f8b7abec-ccc9-4b55-b629-5e7f0a7acb7c"
+  } ]
+}

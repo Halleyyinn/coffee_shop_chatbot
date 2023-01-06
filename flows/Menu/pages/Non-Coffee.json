@@ -1,0 +1,49 @@
+{
+  "name": "4dfc596a-782f-4767-b402-56d041c22182",
+  "displayName": "Non-Coffee",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "We have Chocolate, Matcha, Lemon tea, Thai milk tea, Honey milk, Orange juice, Apple juice, Watermelon juice, and Honey lemon What would you like to have?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "text": "Chocolate"
+          }, {
+            "text": "Matcha"
+          }, {
+            "text": "Lemon Tea"
+          }, {
+            "text": "Thai Milk Tea"
+          }, {
+            "text": "Honey Milk"
+          }, {
+            "text": "Orange Juice"
+          }, {
+            "text": "Apple Juice"
+          }, {
+            "text": "Watermelon Juice"
+          }, {
+            "text": "Honey Lemon"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Order Non Coffee",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Order non-coffee",
+    "name": "d866e66e-fbdb-417e-b65f-80d851e43cb5"
+  } ]
+}

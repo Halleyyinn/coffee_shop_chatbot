@@ -1,0 +1,23 @@
+{
+  "name": "d3dc8dc6-e7fd-401d-aeb3-72ad3bec790d",
+  "displayName": "New Date",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Noted with the new date! See you at $session.params.reservation_date! " ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Thank you ",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Thank you ",
+    "name": "7cc453ad-9bd4-4b42-99d7-c649b07e71b8"
+  } ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "5c021c2c-3ed2-4d4e-be5a-2c87b60534a8",
+  "displayName": "Order cake",
+  "form": {
+    "parameters": [ {
+      "displayName": "cake_choices",
+      "required": true,
+      "entityType": "@cake_choices",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    }, {
+      "displayName": "number_cake",
+      "required": true,
+      "entityType": "@sys.number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "How many slice(s) of cake you would like to have?" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Cake Confirmation",
+    "name": "eece62ad-6b54-4b2a-a297-15af767330cb"
+  } ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "744b9776-050b-44b5-89c7-f251f3730569",
+  "displayName": "Order Non Coffee",
+  "parameters": [ {
+    "id": "non_coffee_choices",
+    "entityType": "@non_coffee_choices"
+  } ],
+  "priority": 500000
+}

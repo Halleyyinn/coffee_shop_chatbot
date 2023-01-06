@@ -1,0 +1,23 @@
+{
+  "name": "42fcef14-0ec6-43aa-8176-1805e8237cda",
+  "displayName": "Reservation Date",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Please let us know the time you would like to visit us. " ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Reservation Time",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Reservation Time",
+    "name": "831b0aa4-2e9b-4ae9-914c-dde49aa1bce4"
+  } ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "1a8f7e3d-9151-4a49-8fc4-59fa8f145764",
+  "displayName": "Dine in",
+  "form": {
+  
+  },
+  "transitionRoutes": [ {
+    "intent": "Reservation",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Reservation",
+    "name": "05e96a81-d90f-43b8-bf53-1977ff7d2e7d"
+  } ]
+}

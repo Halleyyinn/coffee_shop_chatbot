@@ -1,0 +1,23 @@
+{
+  "name": "26721ac1-6f8a-4efd-a529-7eac12a9c861",
+  "displayName": "New Number Pax",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Noted with thanks. We've already updated your new number of pax to $session.params.number_pax persons. " ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Thank you ",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Thank you ",
+    "name": "9207ae13-0ac8-47d7-8fcc-3af830086c74"
+  } ]
+}

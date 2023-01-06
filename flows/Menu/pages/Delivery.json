@@ -1,0 +1,60 @@
+{
+  "name": "cac5c09c-5524-4d02-8874-6713f65e6931",
+  "displayName": "Delivery",
+  "form": {
+    "parameters": [ {
+      "displayName": "delivery_address",
+      "required": true,
+      "entityType": "@sys.address",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+        
+        }
+      }
+    }, {
+      "displayName": "customer_name",
+      "required": true,
+      "entityType": "@sys.any",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Please give us a name for this delivery" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    }, {
+      "displayName": "customer_contact",
+      "required": true,
+      "entityType": "@sys.phone-number",
+      "fillBehavior": {
+        "initialPromptFulfillment": {
+          "messages": [ {
+            "text": {
+              "text": [ "Please give us a contact number for this delivery" ]
+            },
+            "languageCode": "en"
+          } ]
+        }
+      }
+    } ]
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Noted. Please provide us with your address for delivery. " ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "condition": "$page.params.status = FINAL",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Delivery Confirm",
+    "name": "2cbc5ad0-c67b-47a1-93b4-7681defde105"
+  } ]
+}

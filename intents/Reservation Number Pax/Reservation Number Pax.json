@@ -1,0 +1,9 @@
+{
+  "name": "6e1a6873-533d-4f94-b1dc-b39c2ab47b82",
+  "displayName": "Reservation Number Pax",
+  "parameters": [ {
+    "id": "number_pax",
+    "entityType": "@sys.number"
+  } ],
+  "priority": 500000
+}

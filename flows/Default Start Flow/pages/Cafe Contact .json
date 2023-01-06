@@ -1,0 +1,44 @@
+{
+  "name": "db4daa82-04cc-43fb-8380-65f776073fb0",
+  "displayName": "Cafe Contact ",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "You may call us at 082 209 6080 (Cat) or chat with Kopi (our chatbot) for help." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "If you have any other questions, please let us know. " ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "text": "Operation hours"
+          }, {
+            "text": "Location"
+          }, {
+            "text": "Reservation"
+          }, {
+            "text": "Menu"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "eventHandlers": [ {
+    "targetPage": "End Session",
+    "event": "clearsession",
+    "triggerFulfillment": {
+    
+    },
+    "name": "a854653d-c1e3-4071-bf83-c7a9297dab06"
+  } ]
+}

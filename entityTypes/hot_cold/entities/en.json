@@ -1,0 +1,15 @@
+{
+  "entities": [ {
+    "value": "hot",
+    "synonyms": [ "hot" ],
+    "languageCode": "en"
+  }, {
+    "value": "cold",
+    "synonyms": [ "cold" ],
+    "languageCode": "en"
+  }, {
+    "value": "less ice",
+    "synonyms": [ "less ice" ],
+    "languageCode": "en"
+  } ]
+}

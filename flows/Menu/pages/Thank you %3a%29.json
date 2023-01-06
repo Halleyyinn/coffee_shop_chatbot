@@ -1,0 +1,23 @@
+{
+  "name": "c423f713-eee2-4943-ac3f-aff15504ef56",
+  "displayName": "Thank you :)",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "No problem! Glad to serve you! Hope to see you soon ;)" ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Default Welcome Intent",
+    "triggerFulfillment": {
+    
+    },
+    "targetFlow": "Default Start Flow",
+    "name": "13586e62-dc3e-4453-b04d-ed6214ed0833"
+  } ]
+}

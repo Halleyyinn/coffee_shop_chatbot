@@ -1,0 +1,42 @@
+{
+  "name": "30f2a2c9-5666-4a9d-85f9-0eb69b4a1efd",
+  "displayName": "Cake Confirmation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Thanks for your order. You've ordered $session.params.number_cake $session.params.cake_choices. Do you want to add any other orders?" ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "text": "Yes, extra order"
+          }, {
+            "text": "No, that's it"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Extra order",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Menu",
+    "name": "c9eeaa92-0360-463a-97ec-c233b21c20d8"
+  }, {
+    "intent": "No extra order",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "no extra order",
+    "name": "5d557afe-33b3-4616-9a4b-8b468fd1a815"
+  } ]
+}

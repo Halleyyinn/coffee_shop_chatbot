@@ -1,0 +1,51 @@
+{
+  "name": "4169c74f-a121-4650-91bb-cf8127a02efc",
+  "displayName": "Menu",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "We have coffee, non-coffee drinks, and cake. Please let us know which category you would like to know more." ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "text": "Coffee"
+          }, {
+            "text": "Non-Coffee"
+          }, {
+            "text": "Cake"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Cake",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Cake",
+    "name": "ec331f0f-dc79-4ebe-8aae-6894d497880e"
+  }, {
+    "intent": "Coffee",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Coffee",
+    "name": "453d3c7e-2859-4f41-a77b-0eefcc8372c0"
+  }, {
+    "intent": "Non Coffee",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Non-Coffee",
+    "name": "40b582a6-6821-4a81-9778-4761d6a5e955"
+  } ]
+}

@@ -1,0 +1,27 @@
+{
+  "entities": [ {
+    "value": "0%",
+    "synonyms": [ "0%", "no sugar", "no sweet", "zero sugar", "zero sweet" ],
+    "languageCode": "en"
+  }, {
+    "value": "25%",
+    "synonyms": [ "25%", "a little bit of sugar" ],
+    "languageCode": "en"
+  }, {
+    "value": "50%",
+    "synonyms": [ "50%", "half" ],
+    "languageCode": "en"
+  }, {
+    "value": "75%",
+    "synonyms": [ "75%", "less sugar" ],
+    "languageCode": "en"
+  }, {
+    "value": "100%",
+    "synonyms": [ "100%", "normal", "regular" ],
+    "languageCode": "en"
+  }, {
+    "value": "\u003e100%",
+    "synonyms": [ "\u003e100%", "add sugar", "add sweet", "more sugar", "more sweet" ],
+    "languageCode": "en"
+  } ]
+}

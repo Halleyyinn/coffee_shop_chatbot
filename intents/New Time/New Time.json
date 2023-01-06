@@ -1,0 +1,9 @@
+{
+  "name": "52c91758-061f-47bf-af13-f0f66b32fa76",
+  "displayName": "New Time",
+  "parameters": [ {
+    "id": "reservation_time",
+    "entityType": "@sys.time"
+  } ],
+  "priority": 500000
+}

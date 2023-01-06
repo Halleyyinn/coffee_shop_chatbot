@@ -1,0 +1,23 @@
+{
+  "name": "14b9091a-523f-4632-9dc8-6013355d0560",
+  "displayName": "Change Number Pax",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Please let us know the new number of pax that will be coming for this reservation. " ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "New number pax ",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "New Number Pax",
+    "name": "265fdc84-ff01-416b-bb27-bfebc8da8c4c"
+  } ]
+}

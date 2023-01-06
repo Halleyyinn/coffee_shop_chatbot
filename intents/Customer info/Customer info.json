@@ -1,0 +1,9 @@
+{
+  "name": "774ec0a4-db7d-4213-b1c6-9738f196c4bf",
+  "displayName": "Customer info",
+  "parameters": [ {
+    "id": "delivery_addres",
+    "entityType": "@sys.address"
+  } ],
+  "priority": 500000
+}

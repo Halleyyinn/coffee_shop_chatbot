@@ -1,0 +1,44 @@
+{
+  "name": "b68a5d98-009f-4a4b-b809-c45ca395dfa9",
+  "displayName": "Cafe Location",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "We are located at 6, 1 Punna Withi 11 Alley, Bang Chak Khet Phra Khanong, Krung Thep Maha Nakhon 10260" ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "If you have any other questions to ask, please feel free to do so. " ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "text": "Operation Hours"
+          }, {
+            "text": "Contact"
+          }, {
+            "text": "Reservation"
+          }, {
+            "text": "Menu"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "eventHandlers": [ {
+    "targetPage": "End Session",
+    "event": "clearsession",
+    "triggerFulfillment": {
+    
+    },
+    "name": "2d8d54ad-c97c-4f41-a779-85678e41048b"
+  } ]
+}

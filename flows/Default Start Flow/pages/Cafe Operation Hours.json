@@ -1,0 +1,44 @@
+{
+  "name": "ad19d9a3-c8b5-415d-a11a-332d73f44571",
+  "displayName": "Cafe Operation Hours",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "We open at 10:00 AM to 09:00 PM (closes on Mondays)." ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "If you have any other questions, please feel free to let us know. " ]
+      },
+      "languageCode": "en"
+    }, {
+      "payload": {
+        "richContent": [ [ {
+          "options": [ {
+            "text": "Location"
+          }, {
+            "text": "Contact"
+          }, {
+            "text": "Reservation"
+          }, {
+            "text": "Menu"
+          } ],
+          "type": "chips"
+        } ] ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "eventHandlers": [ {
+    "targetPage": "End Session",
+    "event": "clearsession",
+    "triggerFulfillment": {
+    
+    },
+    "name": "09bfa52d-0b82-4234-aede-6c1f9388b168"
+  } ]
+}

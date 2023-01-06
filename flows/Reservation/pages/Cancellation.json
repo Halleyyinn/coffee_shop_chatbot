@@ -1,0 +1,28 @@
+{
+  "name": "d459e360-df9b-4c78-8eb4-3d7151d57db4",
+  "displayName": "Cancellation",
+  "form": {
+  
+  },
+  "entryFulfillment": {
+    "messages": [ {
+      "text": {
+        "text": [ "Noted. Sorry to hear that you can't make it to the reservation. " ]
+      },
+      "languageCode": "en"
+    }, {
+      "text": {
+        "text": [ "If you have any other questions, please feel free to let us know. " ]
+      },
+      "languageCode": "en"
+    } ]
+  },
+  "transitionRoutes": [ {
+    "intent": "Thank you ",
+    "triggerFulfillment": {
+    
+    },
+    "targetPage": "Thank you ",
+    "name": "34977d07-00a9-482c-9100-7a26ef4b5634"
+  } ]
+}
